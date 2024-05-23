@@ -25,3 +25,5 @@ We are able to save the payment status of transactions to database (CREATED, INI
 
 TECHNOLOGIES:
 JAVA,SPRING STS,MYSQL,POSTMAN CLIENT,JUNIT +MOCKITO TESTING
+
+Stripe Docs URL:https://docs.stripe.com/api/checkout/sessions
