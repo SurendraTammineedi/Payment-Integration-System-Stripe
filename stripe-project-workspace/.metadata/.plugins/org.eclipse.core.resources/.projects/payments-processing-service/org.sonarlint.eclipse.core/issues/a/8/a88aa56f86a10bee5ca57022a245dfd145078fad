@@ -1,0 +1,7 @@
+
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8“¤úæô1b 0132ec8cee01c5dd244e1a60fe6448a1h
+e	java:S106"+Replace this use of System.out by a logger.8“¤úæô1b bb1c3f2ea781263d3a2bb92b06a2061fh
+e	java:S106#"+Replace this use of System.out by a logger.8“¤úæô1b bb1c3f2ea781263d3a2bb92b06a2061fh
+
+java:S1128"DRemove this unused import 'org.springframework.core.log.LogMessage'.8“¤úæô1b 3fed0e1704f418e2c8ebf180628b355bh

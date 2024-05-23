@@ -1,0 +1,9 @@
+
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+{
+java:S6830"GRename this bean to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 2f6564d601ba56eabc92f82f16326f17h
+o	java:S1252"<This block of commented-out lines of code should be removed.b c40164772f4f03a7e89dd4acdf464a8bh
+‘	java:S116""WRename this field "MODE_PAYMENT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8ë½Ûø1b 170c26e5b26caf4b5c29bddd3c444f2ch
+\
+java:S1170""!Make this final field static too.8ë½Ûø1b 170c26e5b26caf4b5c29bddd3c444f2ch

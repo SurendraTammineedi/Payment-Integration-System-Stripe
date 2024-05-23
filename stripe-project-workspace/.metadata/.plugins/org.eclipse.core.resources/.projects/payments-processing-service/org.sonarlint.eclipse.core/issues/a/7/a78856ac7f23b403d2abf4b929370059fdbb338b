@@ -1,0 +1,9 @@
+
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8ז·תהפ1b 0132ec8cee01c5dd244e1a60fe6448a1h
+
+java:S3305"dInject this field value directly into "processingServiceJdbcTemplate", the only method that uses it.8ז·תהפ1b ff035a1dd7655da15295fa5fa89362a7h
+†
+java:S6831"KRemove this redundant "@Qualifier" annotation and rely on the @Bean method.8ז·תהפ1b fe84c87bd6ee6bc75074557f30e577feh
+†
+java:S6831#"KRemove this redundant "@Qualifier" annotation and rely on the @Bean method.8ז·תהפ1b ff1071f1becf91a3f98fa61b04d3bcd0h

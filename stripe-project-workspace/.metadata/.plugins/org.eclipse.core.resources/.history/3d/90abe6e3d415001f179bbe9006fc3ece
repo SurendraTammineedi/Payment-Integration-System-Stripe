@@ -1,0 +1,22 @@
+package com.cpt.payments.service.impl;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.cpt.payments.dto.ProcessPayment;
+
+@ExtendWith(MockitoExtension.class)
+public class PaymentServiceImplTest {
+	
+	@InjectMocks
+	PaymentServiceImpl ServiceImpl;
+	
+	@Test
+	void myTest() {
+		System.out.println("Invoking mytest");
+		ProcessPayment processPayment=new ProcessPayment;
+		ServiceImpl.processPayment(processPayment);
+	}
+}

@@ -1,0 +1,5 @@
+
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+†
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.8Œ»¬¾õ1b b36eb6a54154f7301f004e1e61c87ce8h

@@ -1,0 +1,8 @@
+package com.cpt.payments.pojo;
+
+public class Snippet {
+	public static void main(String[] args) {
+		PAYMENT_EXPIRE
+	}
+}
+

@@ -1,0 +1,33 @@
+package com.cpt.payments.service.impl;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.cpt.payments.dao.TransactionDao;
+import com.cpt.payments.dto.ProcessPayment;
+import com.cpt.payments.exception.PaymentProcessingException;
+
+@ExtendWith(MockitoExtension.class)
+public class PaymentServiceImplTest {
+	
+	@Mock
+	TransactionDao transactionDao;
+	
+	@InjectMocks
+	PaymentServiceImpl ServiceImpl;
+	
+	@Test
+	void myTest() {
+		System.out.println("Invoking mytest");
+		
+		//preparing the data
+		ProcessPayment processPayment=new ProcessPayment();
+		//
+		assertThrows(PaymentProcessingException.class,()->erviceImpl.processPayment(processPayment));
+	}
+}

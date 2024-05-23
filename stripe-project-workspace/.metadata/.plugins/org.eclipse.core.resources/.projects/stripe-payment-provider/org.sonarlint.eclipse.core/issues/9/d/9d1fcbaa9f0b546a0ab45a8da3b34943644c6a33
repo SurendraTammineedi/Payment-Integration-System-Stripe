@@ -1,0 +1,4 @@
+
+‘	java:S116	"WRename this field "amount_total" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8žµ³Þø1b dfc3947a4b78a47a050356f267de4d28h
+ž	java:S116"dRename this field "payment_method_collection" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8žµ³Þø1b efc5b6340aec7c012a2962017318ce8fh
+“	java:S116"YRename this field "payment_status" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8žµ³Þø1b 74d05977083a7531738709cf6f73ee61h

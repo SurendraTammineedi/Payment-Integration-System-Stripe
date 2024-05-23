@@ -1,0 +1,12 @@
+package com.cpt.payments.service.impl;
+
+import org.mockito.junit.jupiter.MockitoExtension;
+
+@ExtendsWith(MockitoExtension.class)
+public class PaymentServiceImplTest {
+	
+	
+	
+	
+	PaymentServiceImpl paymentServiceImpl;
+}

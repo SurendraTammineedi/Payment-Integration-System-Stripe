@@ -1,0 +1,17 @@
+package com.cpt.payments.service.impl;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+@ExtendWith(MockitoExtension.class)
+public class PaymentServiceImplTest {
+	
+	
+	PaymentServiceImpl ServiceImpl;
+	
+	@Test
+	void myTest() {
+		System.out.println("Invoking mytest");
+		ServiceImpl.processPayment(null);
+	}
+}

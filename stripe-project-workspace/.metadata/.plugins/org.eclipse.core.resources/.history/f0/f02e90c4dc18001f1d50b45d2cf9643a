@@ -1,0 +1,8 @@
+package com.cpt.payments.service.impl.status.handler;
+
+public class Snippet {
+	public static void main(String[] args) {
+		ApprovedTransactionStatusHandler
+	}
+}
+

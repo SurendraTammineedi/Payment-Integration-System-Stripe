@@ -1,0 +1,46 @@
+package com.cpt.payments.service.impl;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.cpt.payments.http.HttpRequest;
+import com.cpt.payments.http.HttpRestTemplateEngine;
+import com.cpt.payments.pojo.StripeProviderRequest;
+import com.cpt.payments.pojo.StripeProviderResponse;
+import com.cpt.payments.service.PaymentService;
+import com.cpt.payments.service.formatter.request.InitiatePaymentRequestHandler;
+import com.google.gson.Gson;
+
+@Service
+public class PaymentServiceImpl implements PaymentService {
+	private static final Logger LOGGER = LogManager.getLogger(PaymentServiceImpl.class);
+
+	@Autowired
+	private InitiatePaymentRequestHandler initiatePaymentRequestHandler;
+	
+	@Autowired
+	private HttpRestTemplateEngine httpRestTemplateEngine;
+
+
+
+	@Override
+	public StripeProviderResponse initiatePayment(StripeProviderRequest stripeProviderRequest) {
+		LogMessage.log(LOGGER, " invoking initiate payment method with stripeProviderRequest: -> " + stripeProviderRequest);
+		Gson gson=new Gson();
+		HttpRequest httpRequest = initiatePaymentRequestHandler.prepareRequest(gson.toJson(stripeProviderRequest));
+
+		ResponseEntity<String> response2 = httpRestTemplateEngine.execute(httpRequest);
+
+		LogMessage.log(LOGGER, " GOt API response form stripe || response2  " + response2);
+
+				StripeProviderResponse response=StripeProviderResponse.builder()
+				.paymentId("Strip-Provider-payment-id")
+				.redirectUrl("http://redirect.stripe.com")
+				.build();
+	 return response;
+	}
+
+}

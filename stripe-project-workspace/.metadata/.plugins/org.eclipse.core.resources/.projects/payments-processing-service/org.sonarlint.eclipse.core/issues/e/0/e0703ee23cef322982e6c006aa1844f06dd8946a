@@ -1,0 +1,24 @@
+
+y
+java:S22597"EA "NullPointerException" could be thrown; "getKey()" can return null.b b43efa6279277aef59d369ecd610b405h
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+^	java:S1068"+Replace this use of System.out by a logger.b bb1c3f2ea781263d3a2bb92b06a2061fh
+^	java:S106;"+Replace this use of System.out by a logger.b bb1c3f2ea781263d3a2bb92b06a2061fh
+e	java:S106J"+Replace this use of System.out by a logger.8îþ«ëô1b bb1c3f2ea781263d3a2bb92b06a2061fh
+e	java:S106S"+Replace this use of System.out by a logger.8­°»ëô1b bb1c3f2ea781263d3a2bb92b06a2061fh
+‹	java:S117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8×¡Æ¾õ1b 1b0ffaae3973401f71cd000ab9f7856eh
+p
+java:S2209_"5Change this instance-reference to a static reference.8×¡Æ¾õ1b 1b0ffaae3973401f71cd000ab9f7856eh
+e	java:S106Z"+Replace this use of System.out by a logger.8šåË¾õ1b bb1c3f2ea781263d3a2bb92b06a2061fh
+e	java:S106a"+Replace this use of System.out by a logger.8¡Î¾õ1b bb1c3f2ea781263d3a2bb92b06a2061fh
+e	java:S106c"+Replace this use of System.out by a logger.8¡Î¾õ1b bb1c3f2ea781263d3a2bb92b06a2061fh
+e	java:S106k"+Replace this use of System.out by a logger.8¡Î¾õ1b bb1c3f2ea781263d3a2bb92b06a2061fh
+„
+java:S2259_"IA "NullPointerException" could be thrown; "Transaction" is nullable here.8æ˜ç¾õ1b 746d8db68581761e7dec01ab01ae54e7h
+e	java:S106t"+Replace this use of System.out by a logger.8Ì¦Þ±ö1b bb1c3f2ea781263d3a2bb92b06a2061fh
+e	java:S106~"+Replace this use of System.out by a logger.8Ì¦Þ±ö1b bb1c3f2ea781263d3a2bb92b06a2061fh
+‚
+java:S1128"GRemove this unused import 'org.springframework.jdbc.core.JdbcTemplate'.8Ì¦Þ±ö1b a4d0a073a3e24d464a7f748ea8160ce8h
+y
+java:S1128">Remove this unused import 'com.cpt.payments.utils.LogMessage'.8Ì¦Þ±ö1b b7ca13a7ccd7d9a87015cfcf9b4db47eh

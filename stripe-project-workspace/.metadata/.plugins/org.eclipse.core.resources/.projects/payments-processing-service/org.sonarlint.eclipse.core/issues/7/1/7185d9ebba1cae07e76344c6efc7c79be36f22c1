@@ -1,0 +1,10 @@
+
+s
+java:S3416!"8Update this logger to use "StripeProviderHandler.class".8²™Ύυ1b 907338b0868effb653a6c87f75c9b914h
+}
+java:S6813&"BRemove this field injection and use constructor injection instead.8σ™κυ1b 0132ec8cee01c5dd244e1a60fe6448a1h
+}
+java:S6813)"BRemove this field injection and use constructor injection instead.8ρΠλυ1b 0132ec8cee01c5dd244e1a60fe6448a1h
+}
+java:S6813,"BRemove this field injection and use constructor injection instead.8ΕΨγ¶φ1b 0132ec8cee01c5dd244e1a60fe6448a1h
+e	java:S106q"+Replace this use of System.out by a logger.8ΕΨγ¶φ1b bb1c3f2ea781263d3a2bb92b06a2061fh

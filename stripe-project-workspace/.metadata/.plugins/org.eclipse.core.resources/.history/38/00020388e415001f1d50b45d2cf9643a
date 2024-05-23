@@ -1,0 +1,98 @@
+package com.cpt.payments.service.impl;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.Mockito.when;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.http.HttpStatus;
+
+import com.cpt.payments.constants.ErrorCodeEnum;
+import com.cpt.payments.dao.TransactionDao;
+import com.cpt.payments.dto.ProcessPayment;
+import com.cpt.payments.dto.Transaction;
+import com.cpt.payments.exception.PaymentProcessingException;
+import com.cpt.payments.service.factory.ProviderHandlerFactory;
+import com.cpt.payments.service.impl.provider.handler.StripeProviderHandler;
+
+@ExtendWith(MockitoExtension.class)
+public class PaymentServiceImplTest {
+	
+	@Mock
+	TransactionDao transactionDao;
+	
+	@Mock
+	private ProviderHandlerFactory providerHandlerFactory;
+	
+	@InjectMocks
+	PaymentServiceImpl ServiceImpl;
+	
+	@Test
+	void testProcessPaymentNullTxn() {
+		System.out.println("Invoking mytest");
+		
+		//preparing the data
+		ProcessPayment processPayment=new ProcessPayment();
+		
+		//invoking method and setting expectation
+		PaymentProcessingException ex=assertThrows(PaymentProcessingException.class,()->ServiceImpl.processPayment(processPayment));
+		
+		assertEquals(HttpStatus.BAD_REQUEST, ex.getHttpStatus());
+		assertEquals(ErrorCodeEnum.PAYMENT_NOT_FOUND.getErrorCode(), ex.getErrorCode());
+		assertEquals(ErrorCodeEnum.PAYMENT_NOT_FOUND.getErrorMessage(), ex.getErrorMessage());
+	}
+	@Test
+	void testProcessPaymentNullProviderHandler() {
+		System.out.println("Invoking mytest");
+		
+		//preparing the data
+		ProcessPayment processPayment=new ProcessPayment();
+		
+		//overriding default mock behaviour
+		Transaction txn=new Transaction();
+		txn.setId(12345);
+		when(transactionDao.getTransactionById(anyLong())).thenReturn(txn);
+		
+		//invoking method and setting expectation
+		PaymentProcessingException ex=assertThrows(PaymentProcessingException.class,()->ServiceImpl.processPayment(processPayment));
+		
+		assertEquals(HttpStatus.BAD_REQUEST, ex.getHttpStatus());
+		assertEquals(ErrorCodeEnum.PROVIDER_NOT_FOUND.getErrorCode(), ex.getErrorCode());
+		assertEquals(ErrorCodeEnum.PROVIDER_NOT_FOUND.getErrorMessage(), ex.getErrorMessage());
+		
+
+	}
+	@Test
+	void testProcessPaymentSuccess() {
+		System.out.println("Invoking mytest");
+		
+		//preparing the data
+		ProcessPayment processPayment=new ProcessPayment();
+		
+		//overriding default mock behaviour
+		Transaction txn=new Transaction();
+		txn.setId(12345);
+		txn.setProviderId(2);
+		when(transactionDao.getTransactionById(anyLong())).thenReturn(txn);
+		
+		StripeProviderHandler handler=new StripeProviderHandler();
+		when(providerHandlerFactory.getProviderHandler(anyInt())).thenReturn(handler);
+		
+	//	ProviderHandler providerHandler=providerHandlerFactory.getProviderHandler(txn.getProviderId());
+		
+		//invoking method and setting expectation
+		PaymentProcessingException ex=assertThrows(PaymentProcessingException.class,()->ServiceImpl.processPayment(processPayment));
+		
+		assertEquals(HttpStatus.BAD_REQUEST, ex.getHttpStatus());
+		assertEquals(ErrorCodeEnum.PROVIDER_NOT_FOUND.getErrorCode(), ex.getErrorCode());
+		assertEquals(ErrorCodeEnum.PROVIDER_NOT_FOUND.getErrorMessage(), ex.getErrorMessage());
+		
+
+	}
+}

@@ -1,0 +1,9 @@
+package com.cpt.payments.service.impl;
+
+public class PaymentServiceImplTest {
+	PaymentServiceImpl serviceImpl;
+	
+	void myTest() {
+		serviceImpl.
+	}
+}

@@ -1,0 +1,9 @@
+
+i
+java:S2209r"5Change this instance-reference to a static reference.b fae2514948385adc8ca1096b6e42fd7ah
+t
+java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.b 112fa9b8212b84b40482a74f5181f850h
+™
+java:S1488O"^Immediately return this expression instead of assigning it to the temporary variable "entity".8¼ßñø1b 55fb326685de5d54b16501b73180144dh
+™
+java:S1488S"^Immediately return this expression instead of assigning it to the temporary variable "entity".8¼ßñø1b b127d1fbbafe2bc09d46dcc0e47a0422h

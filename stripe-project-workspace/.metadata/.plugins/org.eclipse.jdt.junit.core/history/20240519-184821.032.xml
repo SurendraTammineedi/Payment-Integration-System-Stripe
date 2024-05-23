@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PaymentServiceImplTest" project="payments-processing-service" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cpt.payments.service.impl.PaymentServiceImplTest" time="3.078" displayname="PaymentServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.cpt.payments.service.impl.PaymentServiceImplTest]">
+    <testcase name="testProcessPaymentNullProviderHandler" classname="com.cpt.payments.service.impl.PaymentServiceImplTest" time="3.068" displayname="testProcessPaymentNullProviderHandler()" uniqueid="[engine:junit-jupiter]/[class:com.cpt.payments.service.impl.PaymentServiceImplTest]/[method:testProcessPaymentNullProviderHandler()]"/>
+    <testcase name="testProcessPaymentNullTxn" classname="com.cpt.payments.service.impl.PaymentServiceImplTest" time="0.008" displayname="testProcessPaymentNullTxn()" uniqueid="[engine:junit-jupiter]/[class:com.cpt.payments.service.impl.PaymentServiceImplTest]/[method:testProcessPaymentNullTxn()]"/>
+  </testsuite>
+</testrun>

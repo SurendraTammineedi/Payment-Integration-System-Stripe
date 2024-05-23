@@ -1,0 +1,8 @@
+package com.cpt.payments.stripe;
+
+public class Snippet {
+	public static void main(String[] args) {
+		StripeCoreResponse
+	}
+}
+

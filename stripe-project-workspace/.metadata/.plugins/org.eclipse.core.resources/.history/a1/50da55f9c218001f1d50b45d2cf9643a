@@ -1,0 +1,37 @@
+package com.cpt.payments.controller;
+
+import java.io.BufferedReader;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+
+@RestController
+@RequestMapping("/stripe")
+public class StripeNotificationController {
+
+	@PostMapping("/notification")
+	public int processNotification(HttpServletRequest request) {
+		System.out.println("Stripe notification invoked");		
+		
+		StringBuilder sb=new StringBuilder();
+		try {
+			BufferedReader reader=request.getReader();
+			String line;
+			while((line=reader.readLine())!=null) {
+				sb.append(line);
+			}
+			reader.close();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		String jsonData=sb.toString();
+		return 1;
+	}
+	
+	
+}

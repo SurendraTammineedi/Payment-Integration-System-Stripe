@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=payments-processing-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cpt.payments.dao{TransactionDao.java[TransactionDao" modifiers="513" timestamp="1715406702209"/>
+    <typeInfo handle="=payments-processing-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cpt.payments.service{PaymentService.java[PaymentService" modifiers="513" timestamp="1715162891590"/>
+    <typeInfo handle="=payments-processing-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cpt.payments.service{ProviderHandler.java[ProviderHandler" modifiers="513" timestamp="1715164334701"/>
+    <typeInfo handle="=payments-processing-service/C:\/Users\/tammi\/Downloads\/sts-4.22.0.RELEASE\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/maven.pomderived=/true=/&lt;java.lang(ProcessHandle.class[ProcessHandle" modifiers="1537" timestamp="1711446849235"/>
+</typeInfoHistroy>

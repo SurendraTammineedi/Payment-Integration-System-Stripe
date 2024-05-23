@@ -1,0 +1,5 @@
+package com.cpt.payments.service;
+
+public interface PaymentService {
+
+}
