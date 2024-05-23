@@ -27,3 +27,4 @@ TECHNOLOGIES:
 JAVA,SPRING STS,MYSQL,POSTMAN CLIENT,JUNIT +MOCKITO TESTING
 
 Stripe Docs:https://docs.stripe.com/api/checkout/sessions
+stripe payment test data :https://docs.stripe.com/testing?locale=en-GB
